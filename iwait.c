@@ -54,6 +54,7 @@ int main(int argc, char* argv[])
 
    // Wait for events 
    while (1) {
+       sleep(1);
        poll_num = poll(fds, nfds, -1);
        if (poll_num == -1) {
            if (errno == EINTR)
